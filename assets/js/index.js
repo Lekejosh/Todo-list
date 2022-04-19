@@ -1,5 +1,5 @@
 // Needed elements from Html
-let darkModeBtn = document.getElementById("dark-mode");
+
 let userInput = document.querySelector("input");
 let addTodoBtn = document.getElementById("addTodo");
 let body = document.querySelector("body");
@@ -39,15 +39,6 @@ attachTodo = () => {
   }
 };
 
-// Dark mode function
-darkMode = () => {
-  body.classList.toggle("dark-mode");
-  h1.classList.toggle("lol");
-  userInput.classList.toggle("user");
-  welcomeText.classList.toggle("lol");
-  addTodoBtn.classList.toggle("user2");
-};
-
 // Create a key in localStorage for theme
 
 // Create todo only when an input is entered
@@ -65,7 +56,6 @@ enterKeyAddTodo = (e) => {
 };
 
 // Event listeners
-darkModeBtn.addEventListener("click", darkMode);
 
 addTodoBtn.addEventListener("click", addTodo);
 userInput.addEventListener("keypress", enterKeyAddTodo);
