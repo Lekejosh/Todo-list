@@ -19,18 +19,12 @@ header > h1 {
   font-size: 45px;
   position: relative;
 }
-/* header > h1::after {
-    position: absolute;
-    content: '';
-    height: 8px;
-    bottom: 14px;
-    background: #FFA987;
-    width: 100%;
-    margin: 0 auto;
-	left: 0;
-    right: 0;
-    z-index: -1;
-} */
+.logo {
+  font-family: Nunito;
+  font-weight: 900 !important;
+  font-size: 20px !important;
+}
+
 p.welcome {
   color: #5f6368;
   margin-top: 10px;
@@ -209,5 +203,10 @@ span.close:hover {
   }
   .todo-cover {
     width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .navbar .logo {
+    font-size: 18px;
   }
 }
