@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1a1c31;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+}
+header > h1 {
+  color: #d5c1b2;
+  font-size: 45px;
+  position: relative;
+}
+/* header > h1::after {
+    position: absolute;
+    content: '';
+    height: 8px;
+    bottom: 14px;
+    background: #FFA987;
+    width: 100%;
+    margin: 0 auto;
+	left: 0;
+    right: 0;
+    z-index: -1;
+} */
+p.welcome {
+  color: #5f6368;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+button#dark-mode {
+  background: #fffefc;
+  border: 0;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  padding: 3px 3px 0px 3px;
+  cursor: pointer;
+}
+button#dark-mode:focus {
+  outline: 0;
+}
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+input[type="text"] {
+  padding: 15px;
+  border: 0;
+  width: 30%;
+  margin-right: 10px;
+  outline: 0;
+  border: 2px solid #480403;
+  font-size: 16px;
+}
+button#addTodo {
+  border: 0;
+  background-color: #4804030c;
+  color: #d5c1b2;
+  border: 2px solid #d5c1b2;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+}
+button#addTodo:hover {
+  background-color: #480403;
+  color: #ffffff;
+  transition: 0.4s all ease-in-out;
+}
+.todo-cover {
+  margin-top: 40px;
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul.todos {
+  padding: 5px 30px;
+  width: 100%;
+  border-radius: 5px;
+}
+ul.todos li {
+  padding: 5px 5px 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #480403;
+  margin-top: 20px;
+  border: 2px solid #480403;
+  background-color: #ffffff;
+}
+ul.todos li:nth-child(odd) {
+  border: 2px solid #ffa987 !important;
+}
+.check {
+  text-decoration: line-through;
+}
+button.del {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  border: 0;
+}
+.dark-mode {
+  background-color: #0e0202;
+  color: #ffffff;
+  z-index: -3;
+  transition: all 0.3s ease-in-out;
+}
+
+.lol {
+  color: #ffffff !important;
+}
+.user {
+  border: 2px solid #ffa987 !important;
+}
+.user2 {
+  border: 2px solid #ffa987 !important;
+  color: #ffa987 !important;
+  outline: 0;
+}
+.user2:hover {
+  background-color: #ffa987 !important;
+  color: #ffffff !important;
+}
+span.close {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+span.close:hover {
+  background-color: whitesmoke;
+}
+
+/* Media Queries */
+@media (min-width: 2000px) {
+  p.welcome {
+    font-size: 30px;
+  }
+  header > h1 {
+    font-size: 55px;
+  }
+  header > h1::after {
+    bottom: 18px;
+  }
+  input[type="text"] {
+    padding: 25px;
+    font-size: 25px;
+  }
+  button#addTodo {
+    font-size: 25px;
+  }
+  ul.todos li {
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1025px) {
+  input[type="text"] {
+    width: 50%;
+  }
+  .todo-cover {
+    width: 65%;
+  }
+}
+@media (min-width: 420px) and (max-width: 768px) {
+  p.welcome {
+    font-size: 22px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  header > h1 {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  input[type="text"] {
+    width: 50%;
+  }
+  .todo-cover {
+    width: 70%;
+  }
+}
+@media (max-width: 419px) {
+  p.welcome {
+    font-size: 22px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  input[type="text"] {
+    width: 38%;
+  }
+  button#addTodo {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  header > h1 {
+    font-size: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  header > h1::after {
+    bottom: 12px;
+  }
+  .todo-cover {
+    width: 70%;
+  }
+}
